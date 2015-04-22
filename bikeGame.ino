@@ -26,6 +26,9 @@ long degrateInterval = 120;
  
 void setup() 
 { 
+ pinMode(foutPin, INPUT);
+ pinMode(resetPin, INPUT);
+ pinMode(fietsPin, INPUT);
   myservo.attach(8);  // attaches the servo on pin 9 to the servo object 
   pos = beginVal;
   myservo.write(pos);  
